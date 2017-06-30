@@ -1,0 +1,496 @@
+<!doctype html>
+<!-- Setting page -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Setting page</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--自定义last year-->
+	<link  rel="stylesheet" href="css/style.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/mine-define.css">
+</head>
+<body>
+	<!--head start  -->
+ <div class="navbar navbar-fixed-top nav-bg-blue" role="navigation">
+      <div class="container bg-blue">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-text" href="index.php">Setting page</a>
+        </div>
+        <div class="navbar-collapse collapse">
+           <div class="collapse navbar-collapse">
+           <!-- 导航 -->
+          <ul class="nav navbar-nav ">
+            <li class="active"><a href="index.php" class=" nav-bg-blue"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+            <li><a href="setting.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-cog"></span> 管理区</a></li>
+            <li><a href="shopping.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-shopping-cart"></span> 商品区</a></li>
+            <li><a href="upload.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-upload"></span> 发布区</a></li>
+            <li><a href="serve.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-th"></span> 服务区</a></li>
+            <li>
+            	
+            </li>
+          </ul>
+          <!-- 登陆/注册/搜索 -->
+          <div class="navbar-form navbar-right" role="form">
+                	<button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 登陆</button>
+                    <button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 注册</button>
+            		<div class="form-group nav-margin">
+    				  <input type="text" class="form-control" placeholder="Search">
+                              <a href="#"><span class="glyphicon glyphicon-search nav-text"></span></a>
+  				</div>
+  			</div>
+        </div><!--/.nav-collapse -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div><!--顶部 end -->
+    
+    <!-- 头像 -->
+        <div class="container-fluid head_bg" style="padding-top: 70px;">
+          <center>
+            <div>
+              <img src="img/head_img.jpg" class="head_img">
+               <h3><b> PJY_彭靖怡</b></h3>
+               <h5>我是太阳!</h5>
+            </div>
+          </center>
+        </div>
+    <!-- 头像 end -->
+
+    <!-- 资料  -->
+        <div class="container" ><!-- style="border:1px solid #E52727;min-height: 700px;" -->
+          <!--  -->
+          <div class="container bs-docs-container">
+              <div class="row">
+                <div class="col-md-3 " >
+                  <div id="mainMenuBarAnchor"></div>
+                  <div id="mainMenuBar">
+                  <div class="list-group setting_nav">
+
+                    <div class="row">
+                      <div class="col-md-6" style="margin-right: -30px; margin-left: 15px; ">
+                      <button type="button" class="list-group-item setting_show" style="border-right: 1px dashed #E8E8E8">
+                             <center>
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                    <p>23</p>
+                             </center>
+                       </button>     
+                       </div>
+                      <div class="col-md-6">
+                      <button type="button" class="list-group-item setting_show">
+                        <center>
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                                    <p>500</p>
+                             </center>
+                       </button>
+                      </div>
+                    </div>      
+                      <a href="#page1"><button type="button" class="list-group-item">处理记录</button></a>
+                      <a href="#page2"><button type="button" class="list-group-item">发布记录</button></a>
+                      <a href="#page3"><button type="button" class="list-group-item">用户资料</button></a>
+                      <a href="#page4"><button type="button" class="list-group-item">消息</button></a>
+                    </div>
+                    <ul class="nav nav-pills setting_nav nav-stacked setting_small_nav">
+                        <li role="presentation"><a href="#page5">平台详情</a></li>
+                        <li role="presentation"><a href="#page6">建议 / 投诉</a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="col-md-9" style="padding-top: 20px;">
+                    <!-- 文字 -->
+                    <div class="setting_content">
+                    <!-- 处理记录 -->
+                      <div id="page1">
+                      <h2><b>处理记录</b></h2>
+                      <hr>
+                        <table class="table table-bordered table-striped">
+                          <thead>
+                            <td class="text-center">种类</td>
+                            <td class="text-center table_goods_name">名称</td>
+                            <td class="text-center">处理状态</td>
+                            <td class="text-center table_read_time">处理时间</td>
+                          </thead>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">已处理</td>
+                            <td class="text-center">2016.4.10</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">代拿快递</td>
+                            <td><a href="#" class="table_name">中通1区小包裹</a></td>
+                            <td class="text-center">已处理</td>
+                            <td class="text-center">2016.4.15</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理苹果耳机清仓</a></td>
+                            <td class="text-center">未处理</td>
+                            <td class="text-center">2016.4.10</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">已处理</td>
+                            <td class="text-center">2016.4.10</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理苹果耳机清仓</a></td>
+                            <td class="text-center">未处理</td>
+                            <td class="text-center">2016.4.10</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">外卖宅急送</td>
+                            <td><a href="#" class="table_name">欧克汉堡代拿快递</a></td>
+                            <td class="text-center">未处理</td>
+                            <td class="text-center">2016.4.15</td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">已处理</td>
+                            <td class="text-center">2016.4.10</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!-- 处理记录 end -->
+                      <!-- 我是卖家 -->
+                      <div id="page2" style="padding-top: 40px;">
+                      <h2><b>发布记录</b></h2>
+                      <hr>
+                       <table class="table table-bordered table-striped">
+                          <thead>
+                            <td class="text-center">种类</td>
+                            <td class="text-center " style="width:50%;">名称</td>
+                            <td class="text-center">状态</td>
+                            <td class="text-center table_read_time">发表时间</td>
+                            <td class="text-center">浏览次数</td>
+                            <td class="text-center">操作</td>
+                          </thead>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">正在上架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">正在上架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">代拿快递</td>
+                            <td><a href="#" class="table_name">妹子求代拿百世快递</a></td>
+                            <td class="text-center">未处理</td>
+                            <td class="text-center">2016.4.15</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">已下架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">正在上架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">外卖宅急送</td>
+                            <td><a href="#" class="table_name">有帮拿外卖的吗？龙江猪脚饭27号，万分感谢</a></td>
+                            <td class="text-center">已处理</td>
+                            <td class="text-center">2016.4.15</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">正在上架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">100</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">全新商品</td>
+                            <td><a href="#" class="table_name">全新原装正品苹果耳机清仓特价处理</a></td>
+                            <td class="text-center">正在上架</td>
+                            <td class="text-center">2016.4.10</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center"><a href="#">编辑</a></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!-- 我是卖家 end -->
+                      <!-- 用户资料 -->
+                      <div id="page3" style="padding-top: 40px;">
+                      <h2><b>用户资料</b></h2>
+                        <hr>
+                          <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">用户名:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">PJY_彭靖怡</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">真实姓名:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">逗比</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">性别:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">女</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">生日:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">2016.4.10</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">所在系别:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">软件工程系</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">个性签名:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">我是太阳！</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="col-sm-2 control-label">邮箱:</label>
+                              <div class="col-sm-10">
+                                <p class="form-control-static">email@example.com</p>
+                              </div>
+                            </div>
+                          </form>
+                      </div>
+                      <!-- 用户资料 end -->
+                      <!-- 消息 -->
+                      <div id="page4" style="padding-top: 40px;">
+                      <h2><b>消息</b></h2>
+                      <hr>
+                      <!-- one comment start -->
+                        <div class="comment">
+                          <div class="row">
+                            <div class="col-lg-1">
+                              <img src="img/head_img.jpg" class="comment_head_img">
+                            </div>
+                            <div class="col-lg-11">
+                              <div class="row">
+                                <font class="comment_head_text">PJY_彭靖怡</font>
+                              <div class="comment_back">
+                              回复<a href="#">@PJY_彭靖怡</a>:亲！你好哦！<br>
+                              </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-11 comment_send_row">
+                                  <div class="comment_send">
+                                    <font color="#A19F9F"><b>回复我的评论：</b></font>这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row comment_time">
+                                <font color="#A19F9F"><b>4月11日 19:16</b> </font>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- one comment end -->
+                        <!-- one comment start -->
+                        <div class="comment">
+                          <div class="row">
+                            <div class="col-lg-1">
+                              <img src="img/head_img.jpg" class="comment_head_img">
+                            </div>
+                            <div class="col-lg-11">
+                              <div class="row">
+                                <font class="comment_head_text">PJY_彭靖怡</font>
+                              <div class="comment_back">
+                              回复<a href="#">@PJY_彭靖怡</a>:亲！你好哦！<br>
+                              </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-11 comment_send_row">
+                                  <div class="comment_send">
+                                    <font color="#A19F9F"><b>回复我的评论：</b></font>这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row comment_time">
+                                <font color="#A19F9F"><b>4月11日 19:16</b> </font>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- one comment end -->
+                        <!-- one comment start -->
+                        <div class="comment">
+                          <div class="row">
+                            <div class="col-lg-1">
+                              <img src="img/head_img.jpg" class="comment_head_img">
+                            </div>
+                            <div class="col-lg-11">
+                              <div class="row">
+                                <font class="comment_head_text">PJY_彭靖怡</font>
+                              <div class="comment_back">
+                              回复<a href="#">@PJY_彭靖怡</a>:亲！你好哦！这是别人回复的评论<br>
+                              </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-11 comment_send_row">
+                                  <div class="comment_send">
+                                    <font color="#A19F9F"><b>回复我的评论：</b></font>这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row comment_time">
+                                <font color="#A19F9F"><b>4月11日 19:16</b> </font>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- one comment end -->
+                        <!-- one comment start -->
+                        <div class="comment">
+                          <div class="row">
+                            <div class="col-lg-1">
+                              <img src="img/demo1.jpg" class="comment_head_img">
+                            </div>
+                            <div class="col-lg-11">
+                              <div class="row">
+                                <font class="comment_head_text">PJY_彭靖怡</font>
+                              <div class="comment_back">
+                              回复<a href="#">@PJY_彭靖怡</a>:亲！你好哦！<br>
+                              </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-11 comment_send_row">
+                                  <div class="comment_send">
+                                    <font color="#A19F9F"><b>回复我的评论：</b></font>这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论这是我发的评论
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row comment_time">
+                                <font color="#A19F9F"><b>4月11日 19:16</b> </font>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- one comment end -->
+                      </div>
+                      <!-- 消息 end -->
+                      <!-- 平台详情 -->
+                      <div id="page5" style="padding-top: 40px;">
+                      <h2><b>平台详情</b></h2>
+                      <hr>
+                          <h4><p>本平台有4个区域，分别是管理区、商品区、用户区以及服务区</p></h4> 
+                          <p>其中：</p>
+                          <blockquote>
+                          <p>管理区：商品的交易、商家的商品陈列、登陆时间、用户资料</p>
+                          <p>用户区：购物（商品市场）</p>
+                          <p>商品区：发布商品、快递、外卖信息</p>
+                          <p>服务区：查找快递信息、外卖信息</p>
+                        </blockquote>
+                      </div>
+                      <!-- 平台详情 end -->
+                      <!-- 投诉 -->
+                      <div id="page6" style="padding-top: 40px;">
+                      <h2><b>建议 / 投诉</b></h2>
+                      <hr>
+                      <form>
+                        <textarea class="form-control" rows="3" placeholder="留下您的建议或投诉"></textarea>
+                        <div class="row">
+                          <div class="col-lg-9" style="padding-top: 5px;">
+                          <div class="form-group">
+                          <label >请留下您的email以便我们回复您</label>
+                          <input type="email" class="form-control" placeholder="Please write down your Email">
+                        </div>
+                        </div>
+                        <div class="col-lg-1" style="padding-top: 30px;">
+                          <button type="submit" class="btn setting_submit_btn">提交</button>
+                        </div>
+                        </div>
+                      </form>
+                      </div>
+                      <!-- 投诉 end -->
+                    </div>
+                    <!-- 文字 end  -->
+                </div>
+                </div>
+                
+              </div>
+          </div>
+        </div>
+
+          <!--  -->
+        </div>
+    <!-- 资料 -->
+
+
+<!--footer-->
+  <div class="container">
+     <hr>
+      <footer>
+        <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+      <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+<div class="clearfix"> </div>
+      </footer>
+      <div class="footer-bottom">
+          <p><h6>&copy;广州大学华软软件学院
+        版权所有 2016 &nbsp;</h6></p>
+      </div>
+    </div>
+<!--footer/end-->
+
+    
+<!--返回顶部-->
+  <a href="#" id="toTop" style="display: block;"> <span class="glyphicon glyphicon-chevron-up" style="opacity: 1;"></span></a>
+    <script src="js/to-top.js"></script>
+<!--返回顶部/end-->
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/npm.js"></script>
+<script src="js/setting_nav.js"></script>
+</body>
+</html>

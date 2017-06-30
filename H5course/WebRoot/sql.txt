@@ -1,0 +1,20 @@
+create database users;
+use users;
+create table usergroup(
+user_id int primary key auto_increment,
+username varchar(20),
+password varchar(20))
+//测试用
+insert into usergroup(username,password)values("admin","admin");
+insert into usergroup(username,password)values("PJY","1440121242");
+
+//添加注册
+create table userinfo(
+user_id int,
+email varchar(40),
+gender varchar(6),
+telephone varchar(12),
+birthday varchar(20),
+department varchar(30));
+
+insert into userinfo(user_id,email,gender,telephone,birthday,department)values(1,"admin@123sese.com.cn","女","15901829301","1990年3月28日","软件工程系")

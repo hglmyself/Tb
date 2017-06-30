@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!-- shopping.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping page</title>
+  <!-- 新 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--自定义last year-->
+  <link  rel="stylesheet" href="css/style.css">
+  <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/mine-define.css">
+</head>
+<body>
+<!--head start  -->
+ <div class="navbar navbar-fixed-top nav-bg-blue" role="navigation">
+      <div class="container bg-blue">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-text" href="index.php">Shopping page</a>
+        </div>
+        <div class="navbar-collapse collapse">
+           <div class="collapse navbar-collapse">
+           <!-- 导航 -->
+          <ul class="nav navbar-nav ">
+            <li class="active"><a href="index.php" class=" nav-bg-blue"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+            <li><a href="setting.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-cog"></span> 管理区</a></li>
+            <li><a href="shopping.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-shopping-cart"></span> 商品区</a></li>
+            <li><a href="upload.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-upload"></span> 发布区</a></li>
+            <li><a href="serve.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-th"></span> 服务区</a></li>
+          </ul>
+          <!-- 登陆/注册/搜索 -->
+          <div class="navbar-form navbar-right" role="form">
+                  <button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 登陆</button>
+                    <button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 注册</button>
+                <div class="form-group nav-margin">
+              <input type="text" class="form-control" placeholder="Search">
+                              <a href="#"><span class="glyphicon glyphicon-search nav-text"></span></a>
+          </div>
+        </div>
+        </div><!--/.nav-collapse -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div><!--顶部 end -->
+
+<!-- 顶部栏 -->
+    <div class="container jumbotron_shopping">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1><span class="glyphicon glyphicon-shopping-cart"></span> 商品市场 <font style="font-size: 25px;">Supermarket</font></h1>
+            <div class="rule">
+            <p><span class="glyphicon glyphicon-bullhorn" style="color:#FECA09;"></span><b> 商品区域规则：</b> </p>
+              <p>
+              1、买家需遵守与卖家的约定，违反者举报<br>
+               2、不可发布广告<br>
+               3、不要使用与内容无关的标题<br>
+               4、交易方式需卖家与买家双方商约，本平台不提供任何交易方式<br>
+               5、如果有违规帖子欢迎举报.举报有奖<br>
+               6、图片请使用本地上传，严禁使用外网图片  <br>
+            </p>
+            </div>
+          </div>
+        </div>
+    </div> <!-- /顶部栏 end -->
+
+    <!-- 分类 -->
+    <div class="container">
+        <div class="row">
+        <center style="margin:10px;">
+        <a href="shopping.html" class="shopping_select_text">
+          <div class="col-lg-4 shopping_select">
+          <span class="glyphicon glyphicon-pushpin" style="color:#FECA09;font-size: 28px;"></span>
+          <font style="font-size: 25px;">全新区</font>
+          </div>
+          </a>
+           <a href="shoppingSecondSell.html" class="shopping_select_text">
+          <div class="col-lg-4 shopping_select">
+            <span class="glyphicon glyphicon-hand-right" style="color:#FECA09;font-size: 28px;"></span>
+             <font style="font-size: 25px;">二手区</font>
+            </div>
+            </a>
+            <a href="ShoppingOther.html" class="shopping_select_text">
+          <div class="col-lg-4 shopping_select">
+            <span class="glyphicon glyphicon-bookmark" style="color:#FECA09;font-size: 28px;"></span>
+            <font style="font-size: 25px;">虚拟区</font>
+            </div>
+            </a>
+        </center>
+        </div>
+        <!-- point -->
+        <div class="row">
+            <ol class="breadcrumb point">
+              <li><span class="glyphicon glyphicon-menu-hamburger"></span><a href="shopping.html">商品市场</a></li>
+              <li><a href="shopping.html">全新区</a></li>
+              <li class="active">二手区</li>
+            </ol>
+        </div>
+        <!-- point end -->
+    </div>
+
+    <!--中间内容-->
+    <div class="container">
+      <table class="table table-hover ">
+          <thead>
+          <tr class="active">
+              <td class="table_goods_name"><span class="glyphicon glyphicon-gift table_thead_icon"></span> 商品名称</td>
+                <td class="text-center table_sell_name"><span class="glyphicon glyphicon-user tab table_thead_icon"></span> 卖家</td>
+                <td class="text-center table_read_time"><span class="glyphicon glyphicon-globe table_thead_icon"></span> 浏览次数</td>
+                 <td class="text-center"><span class="glyphicon glyphicon-calendar table_thead_icon"></span> 交易状态</td>
+                <td class="text-center"><span class="glyphicon glyphicon-calendar table_thead_icon"></span> 发表时间</td>
+            </tr>
+          </thead>
+          <tbody id="table2">
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+           <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 二手山地车八成新出售二手山地车八成新出售</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">200</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-fire table_name_icon">Hot</span><a href="#" class="table_name"> 旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器旧品出售宿舍神器</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">180</td>
+                <td class="text-center has_sell">已交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="table_name">九成新三星显示屏！！急出！！</a></td>
+                <td class="text-center">PJY</td>
+                <td class="text-center">100</td>
+                <td class="text-center no_sell">未交易</td>
+                <td class="text-center">2016.4.10</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="change_page">
+           <span id="spanLast" class="page_change">最后一页</span> 
+           <span id="spanNext" class="page_change">下一页</span> 
+            <span id="spanPre" class="page_change">上一页</span> 
+            <span id="spanFirst" class="page_change">第一页</span>
+            <div style="color:#2F6BF5; font-size: 15px;">
+            第<span id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页
+            </div>
+        </div>
+        
+    </div>
+    <!-- 中间文本内容 -->
+
+<!--footer-->
+  <div class="container">
+     <hr>
+      <footer>
+        <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+      <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+<div class="clearfix"> </div>
+      </footer>
+      <div class="footer-bottom">
+          <p><h6>&copy;广州大学华软软件学院
+        版权所有 2016 &nbsp;</h6></p>
+      </div>
+    </div>
+<!--footer/end-->
+
+<!--返回顶部-->
+  <a href="#" id="toTop" style="display: block;"> <span class="glyphicon glyphicon-chevron-up" style="opacity: 1;"></span></a>
+    <script src="js/to-top.js"></script>
+<!--返回顶部/end-->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/npm.js"></script>   
+<script type="text/javascript" src="js/change_page.js"></script>
+</body>
+</html>

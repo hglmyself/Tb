@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- Upload page -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Upload page</title>
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--自定义last year-->
+	<link  rel="stylesheet" href="css/style.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/mine-define.css">
+</head>
+<body>
+	<!--head start  -->
+ <div class="navbar navbar-fixed-top nav-bg-blue" role="navigation">
+      <div class="container bg-blue">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-text" href="index.php">Upload page</a>
+        </div>
+        <div class="navbar-collapse collapse">
+           <div class="collapse navbar-collapse">
+           <!-- 导航 -->
+          <ul class="nav navbar-nav ">
+            <li class="active"><a href="index.php" class=" nav-bg-blue"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+            <li><a href="setting.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-cog"></span> 管理区</a></li>
+            <li><a href="shopping.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-shopping-cart"></span> 商品区</a></li>
+            <li><a href="upload.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-upload"></span> 发布区</a></li>
+            <li><a href="serve.html" class=" nav-bg-blue"><span class="glyphicon glyphicon-th"></span> 服务区</a></li>
+            <li>
+            	
+            </li>
+          </ul>
+          <!-- 登陆/注册/搜索 -->
+          <div class="navbar-form navbar-right" role="form">
+                	<button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 登陆</button>
+                    <button type="button" class="btn btn-primary btn-sm nav-margin"><span class="glyphicon glyphicon-user"></span> 注册</button>
+            		<div class="form-group nav-margin">
+    				  <input type="text" class="form-control" placeholder="Search">
+                              <a href="#"><span class="glyphicon glyphicon-search nav-text"></span></a>
+  				</div>
+  			</div>
+        </div><!--/.nav-collapse -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div><!--顶部 end -->
+
+<!-- 顶部栏 -->
+    <div class="container jumbotron_shopping">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1><span class="glyphicon glyphicon-upload"></span> 发布区 <font style="font-size: 25px;">Upload</font></h1>
+            <div class="rule">
+            <p><span class="glyphicon glyphicon-bullhorn" style="color:#FECA09;"></span><b> 商品区域规则：</b> </p>
+              <p>
+               1、内容需真实，虚假信息将被删除<br>
+               2、不可发布广告<br>
+               3、不要使用与内容无关的标题<br>
+               4、交易成功的商品请卖家及时设置交易状态为“已交易”<br>
+               5、如果有违规帖子欢迎举报.举报有奖<br>
+               6、图片请使用本地上传，严禁使用外网图片  <br>
+            </p>
+            </div>
+          </div>
+        </div>
+    </div> <!-- /顶部栏 end -->
+<!-- 中间内容 -->
+<div class="container">
+  <ul id="tab" class="nav nav-tabs">
+            <li  class="active"><a href="#home" data-toggle="tab">代拿快递</a></li>
+            <li><a href="#profile" data-toggle="tab">外卖宅急送</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">商品发布 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">全新商品</a></li>
+                <li><a href="#dropdown2" data-toggle="tab">二手区</a></li>
+                <li><a href="#dropdown3" data-toggle="tab">虚拟区</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+          <!-- 快递page -->
+            <div class="tab-pane fade  in active" id="home">
+                <div class="col-lg-8 col col-xs-offset-2" style="padding-top:20px ">
+                <div class="form-group">
+                      <label class="col-sm-2 control-label">描述：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Description">
+                        <p class="help-block">此栏会显示在标题处</p>  
+                      </div>
+                    </div>
+                  <div class="form-group">
+                      <label class="col-sm-2 control-label">姓名：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Your name">
+                        <p class="help-block">请输入您的真实姓名，以便拿件</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">快递单号：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="trakcing number">
+                        <p class="help-block">请输入您快件的快递单号</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">联系方式：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="tel">
+                        <p class="help-block">请留下您的联系方式，以便代拿的人方便联系你</p>  
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="col-sm-2 control-label">快递公司：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="company">
+                        <p class="help-block">请留下您快件所在的快递公司</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">备注：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control"  placeholder="remarks">
+                        <p class="help-block">您需要对方注意的</p>  
+                      </div>
+                    </div>
+                    <button type="button" class="btn setting_submit_btn col-sm-3 col-xs-offset-5">提交</button>
+              </div>
+            </div>
+            <!-- 快递page end -->
+            <!-- 外卖page -->
+            <div class="tab-pane fade" id="profile">
+                <div class="col-lg-8 col col-xs-offset-2" style="padding-top:20px ">
+                  <div class="form-group">
+                      <label class="col-sm-2 control-label">您的地址：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="address">
+                        <p class="help-block">此处应填写您的地址，以便准确送达外卖给您</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">取外卖地址：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="">
+                        <p class="help-block">此处应填写商家留给您的地址，以便他人帮您取您的外卖</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">联系方式：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="tel">
+                        <p class="help-block">请留下您的联系方式，以便代拿的人方便联系你</p>  
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="col-sm-2 control-label">外卖单号：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="number">
+                        <p class="help-block">请留下您的外卖单号</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">外卖信息：</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" placeholder="包括：菜单、数量等等"></textarea>
+                        <p class="help-block">以便核对外卖信息</p>  
+                      </div>
+                    </div>
+                    <button type="button" class="btn setting_submit_btn col-sm-3 col-xs-offset-5">提交</button>
+              </div>
+            </div>
+            <!-- 外卖page end -->
+            <!-- 全新区 -->
+            <div class="tab-pane fade" id="dropdown1">
+               <div class="col-lg-8 col col-xs-offset-2" style="padding-top:20px ">
+                  <div class="form-group">
+                      <label class="col-sm-2 control-label">商品名称：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="trade name">
+                        <p class="help-block">简单的介绍您的商品</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">上传商品图片：</label>
+                      <div class="col-sm-9">
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">上传您的商品图片</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">单价：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="How mach">
+                        <p class="help-block"></p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">商品详情：</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="3"></textarea>
+                        <p class="help-block"></p>  
+                      </div>
+                    </div>
+                    <button type="submit" class="btn setting_submit_btn col-sm-3 col-xs-offset-5">提交</button>
+              </div>
+            </div>
+            <div class="tab-pane fade " id="dropdown2">
+               <div class="col-lg-8 col col-xs-offset-2" style="padding-top:20px ">
+                  <div class="form-group">
+                      <label class="col-sm-2 control-label">商品名称：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="trade name">
+                        <p class="help-block">简单的介绍您的商品</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">上传商品图片：</label>
+                      <div class="col-sm-9">
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">上传您的商品图片</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">单价：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="How mach">
+                        <p class="help-block">请填写商品价格</p>  
+                      </div>
+                    </div>
+                     <div class="form-group">
+                      <label class="col-sm-2 control-label">几成新：</label>
+                      <div class="col-sm-10">
+                        <select class="form-control">
+                          <option>9成</option>
+                          <option>8成</option>
+                          <option>7成</option>
+                          <option>6成</option>
+                          <option>5成</option>
+                          <option>4成或以下</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">商品详情：</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="3"></textarea>
+                        <p class="help-block"></p>  
+                      </div>
+                    </div>
+                    <button type="submit" class="btn setting_submit_btn col-sm-3 col-xs-offset-5">提交</button>
+              </div>
+            </div>
+            <!-- 虚拟区 -->
+             <div class="tab-pane fade " id="dropdown3">
+               <div class="col-lg-8 col col-xs-offset-2" style="padding-top:20px ">
+                  <div class="form-group">
+                      <label class="col-sm-2 control-label">商品名称：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="trade name">
+                        <p class="help-block">简单的介绍您的商品</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">上传商品图片：</label>
+                      <div class="col-sm-9">
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">上传您的商品图片</p>  
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">单价：</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="How mach">
+                        <p class="help-block">请填写商品价格</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">类型：</label>
+                      <div class="col-sm-10">
+                        <select class="form-control">
+                          <option>腾讯QQ专区</option>
+                          <option>网游装备/游戏币/账号/代练</option>
+                          <option>网络游戏点卡</option>
+                          <option>生活服务券</option>
+                        </select>
+                        <p class="help-block">请选择你出售的类型</p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">商品详情：</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" rows="3"></textarea>
+                        <p class="help-block"></p>  
+                      </div>
+                    </div>
+                    <button type="submit" class="btn setting_submit_btn col-sm-3 col-xs-offset-5">提交</button>
+              </div>
+            </div>
+            <!-- 虚拟区 end  -->
+          </div>
+</div>
+    
+<!-- 中间内容 end -->
+
+    <!--footer-->
+  <div class="container">
+     <hr>
+      <footer>
+        <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+      <div class="col-md-2">
+        <h5>华软连接</h5>
+          <h6><a href="http://www.sise.com.cn/" class="footer-link">华软主页</a></h6>
+          <h6><a href="http://my.scse.com.cn/" class="footer-link">华软scse</a></h6>
+          <h6><a href="http://home.sise.cn/" class="footer-link">华软导航网</a></h6>
+      </div>
+<div class="clearfix"> </div>
+      </footer>
+      <div class="footer-bottom">
+          <p><h6>&copy;广州大学华软软件学院
+        版权所有 2016 &nbsp;</h6></p>
+      </div>
+    </div>
+<!--footer/end-->
+
+
+
+
+
+
+<!--返回顶部-->
+  <a href="#" id="toTop" style="display: block;"> <span class="glyphicon glyphicon-chevron-up" style="opacity: 1;"></span></a>
+    <script src="js/to-top.js"></script>
+<!--返回顶部/end-->
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/npm.js"></script>
+<script type="text/javascript" src="js/bootstrap-tab.js"></script>
+<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
+<!-- tab -->
+   <script>  
+   $(function () {    $('.tabs a:last').tab('show')  })
+   $('a[data-toggle="tab"]').on('shown', function (e) { 
+    e.target // activated tab  
+   e.relatedTarget // previous tab
+  })
+</script>
+
+</body>
+</html>
